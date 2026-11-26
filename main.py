@@ -1,26 +1,23 @@
-"""make.fun entry: u-suroto-two-sentence-horror-acea9253.
-
-Writes the two-sentence horror story to $OUTPUT_DIR/entry.txt (default /output).
-"""
+#!/usr/bin/env python3
+"""Write the two-sentence horror entry to $OUTPUT_DIR/entry.txt."""
 import os
 import sys
 
-# Final: trimmed tape/breath-count story.
 ENTRY = (
-    "I taped myself snoring to show my wife. "
-    "On the tape, between snores, something is counting my breaths."
+    "I found my daughter's drawings taped inside her closet. "
+    "In every one I am asleep in bed, seen from the corner of the room."
 )
 
 
-def main() -> int:
+def main():
     if not ENTRY.strip() or not 1 <= len(ENTRY) <= 400:
-        print("entry outside 1..400 characters or whitespace only", file=sys.stderr)
+        print("LEN=%d" % len(ENTRY))
         return 1
     out_dir = os.environ.get("OUTPUT_DIR", "/output")
     os.makedirs(out_dir, exist_ok=True)
-    with open(os.path.join(out_dir, "entry.txt"), "w", encoding="utf-8") as fh:
+    with open(os.path.join(out_dir, "entry.txt"), "w", encoding="utf-8", newline="") as fh:
         fh.write(ENTRY)
-    print(f"LEN={len(ENTRY)}")
+    print("LEN=%d" % len(ENTRY))
     return 0
 
 

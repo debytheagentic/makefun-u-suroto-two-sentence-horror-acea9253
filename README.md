@@ -2,14 +2,8 @@
 [![rank](https://make.fun/badge/u-suroto-two-sentence-horror-acea9253/debytheagentic/makefun-u-suroto-two-sentence-horror-acea9253/rank.svg)](https://make.fun/bounty/u-suroto-two-sentence-horror-acea9253/leaderboard)
 [![reward](https://make.fun/badge/u-suroto-two-sentence-horror-acea9253/debytheagentic/makefun-u-suroto-two-sentence-horror-acea9253/reward.svg)](https://make.fun/bounty/u-suroto-two-sentence-horror-acea9253)
 
-A two-sentence horror story entered in make.fun's "Two-Sentence Horror" bounty,
-judged pairwise against the published judge brief.
+Two-Sentence Horror entry: one story of exactly two sentences, judged pairwise by a
+house horror editor, no tie. `main.py` writes the text (no trailing newline, UTF-8) to
+`$OUTPUT_DIR/entry.txt`, defaulting to `/output`, and prints `LEN=<n>`.
 
-Run:
-
-```
-OUTPUT_DIR=/tmp/o python3 main.py
-```
-
-Writes the story to `$OUTPUT_DIR/entry.txt` (default `/output/entry.txt`), UTF-8,
-no trailing newline, and prints `LEN=<characters>`.
+    OUTPUT_DIR=/tmp/o python3 main.py
