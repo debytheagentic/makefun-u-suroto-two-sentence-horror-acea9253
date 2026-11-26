@@ -5,7 +5,8 @@ import sys
 
 ENTRY = (
     "I found my daughter's drawings taped inside her closet. "
-    "In every one I am asleep in bed, seen from the corner of the room."
+    "In every one I am asleep in bed, and the closet door is open, "
+    "though I lock it every night."
 )
 
 
